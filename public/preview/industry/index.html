@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b22">
+  <meta name="description" content="NEXA / SYSTEMS — konsep microsite industri berisi eksplorasi sistem dan alur engineering.">
+  <title>NEXA / SYSTEMS — Engineering the next · Konsep industri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/story-world.css"><link rel="stylesheet" href="/src/theme-industry.css">
+  <script type="module" src="/src/preview-sites.js"></script><script type="module" src="/src/story-world.bundle.js"></script>
+</head>
+<body class="preview-site site-industry" data-preview="industry">
+  <div class="world-canvas-wrap" aria-hidden="true"><canvas id="story-canvas"></canvas></div>
+  <div class="world-fallback world-fallback--industry" aria-hidden="true"><span class="fallback-object"></span></div>
+  <div class="plant-status"><span><i></i> SYSTEM MODEL / 00-04</span><b>CONCEPT STUDY — NO LIVE OPERATIONS</b></div>
+  <header class="plant-header">
+    <a class="plant-wordmark" href="/" aria-label="Kembali ke galeri konsep">NEXA<span>/</span>SYS<small>ENGINEERING THE NEXT</small></a>
+    <nav class="plant-nav" data-site-nav inert aria-label="Navigasi sistem"><a href="#plant-problem">Konteks</a><a href="#plant-network">Arsitektur</a><a href="#plant-capability">Kapabilitas</a></nav>
+    <a class="plant-request" href="#plant-contact">Mulai diskusi <span aria-hidden="true">↗</span></a>
+    <button class="plant-menu-toggle" type="button" data-menu-toggle aria-label="Buka navigasi" aria-expanded="false">MENU</button>
+  </header>
+
+  <main class="plant-journey" data-story-journey>
+    <section class="plant-cover" id="plant-cover" data-story-step="0" aria-labelledby="plant-title">
+      <div class="plant-cover-meta"><span>01 / SYSTEM BRIEF</span><span>NEXA / SYSTEMS — DEMO</span></div>
+      <div class="plant-cover-copy" data-story-reveal="static"><p>ENGINEERING / INDUSTRIAL CONCEPT</p><h1 id="plant-title">Complexity,<br><em>connected.</em></h1><span>Sebuah halaman B2B yang membuka sistem dari garis terluar hingga bagian yang membuatnya bekerja.</span><a href="#plant-problem">Mulai inspeksi <b aria-hidden="true">↓</b></a></div>
+      <div class="plant-corner-note"><span>VISUALISASI 3D</span><span>SCROLL = INSPECTION PATH</span><span>DATA &amp; ANGKA TIDAK DIKLAIM</span></div>
+    </section>
+
+    <section class="plant-problem" id="plant-problem" data-story-step="1" aria-labelledby="plant-problem-title">
+      <div class="plant-grid-tag"><span>02</span><i>CONTEXT</i><b>ENV / 000</b></div>
+      <div class="plant-problem-layout"><div class="plant-coordinate" data-story-reveal><span>THE QUESTION</span><b>01:<br>04</b><i>SEPARATED<br>INPUTS</i></div><div class="plant-problem-copy" data-story-reveal><p>SEBELUM SISTEM DIBANGUN</p><h2 id="plant-problem-title">Pahami alurnya.<br>Baru <em>hubungkan.</em></h2><p>Mulai dengan konteks, bukan klaim. Di sini ditunjukkan bagaimana informasi, komponen, dan kebutuhan dapat dipetakan sebelum menjadi rancangan.</p><div class="plant-issue-list"><span>INPUT / DARI BANYAK SUMBER</span><span>PROCESS / BELUM TERHUBUNG</span><span>OUTPUT / PERLU TERBACA</span></div></div></div>
+    </section>
+
+    <section class="plant-network" id="plant-network" data-story-step="2" aria-labelledby="plant-network-title">
+      <div class="plant-grid-tag"><span>03</span><i>ARCHITECTURE</i><b>NODE / 3D</b></div>
+      <div class="plant-network-heading" data-story-reveal><p>MODEL ARSITEKTUR / DIAGRAM KONSEPTUAL</p><h2 id="plant-network-title">Satu jaringan.<br>Banyak <em>keterhubungan.</em></h2></div>
+      <div class="plant-network-map" role="img" aria-label="Diagram konsep: input, sistem pusat, integrasi, output">
+        <div class="network-node network-node--input"><i>A</i><b>INPUT</b><small>DATA / DEVICE</small></div><div class="network-connector"><span></span><span></span><span></span></div>
+        <div class="network-node network-node--core"><i>SYS</i><b>CORE</b><small>ORCHESTRATE</small></div><div class="network-connector"><span></span><span></span><span></span></div>
+        <div class="network-node network-node--out"><i>B</i><b>OUTPUT</b><small>FLOW / ACTION</small></div>
+      </div>
+      <p class="plant-diagram-caption"><span>TOPOLOGY: DEMO</span><span>Tidak merepresentasikan fasilitas atau operasi perusahaan nyata.</span></p>
+    </section>
+
+    <section class="plant-capability" id="plant-capability" data-story-step="3" aria-labelledby="plant-capability-title">
+      <div class="plant-grid-tag"><span>04</span><i>CAPABILITY MAP</i><b>SELECT / 01</b></div>
+      <div class="plant-capability-intro" data-story-reveal><p>LANGKAH BERIKUTNYA / THE WORK</p><h2 id="plant-capability-title">Sistem bekerja<br>saat bagian-bagiannya <em>searah.</em></h2></div>
+      <div class="plant-capability-board">
+        <div class="plant-capability-tabs" role="tablist" aria-label="Kelompok kemampuan contoh">
+          <button id="tab-design" type="button" role="tab" data-solution-tab="design" aria-selected="true" aria-controls="capability-panel">01 / Rancang</button>
+          <button id="tab-integrate" type="button" role="tab" data-solution-tab="integrate" aria-selected="false" aria-controls="capability-panel" tabindex="-1">02 / Hubungkan</button>
+          <button id="tab-support" type="button" role="tab" data-solution-tab="support" aria-selected="false" aria-controls="capability-panel" tabindex="-1">03 / Rawat</button>
+        </div>
+        <article id="capability-panel" class="plant-capability-panel" role="tabpanel" aria-labelledby="tab-design" tabindex="0"><span class="capability-mark">01 / SYSTEMS</span><h3 data-solution-title>Rekayasa untuk kebutuhan nyata.</h3><p data-solution-copy>Tempat untuk menerangkan layanan, standar, dan konteks teknis. Konten ini masih placeholder, bukan klaim perusahaan.</p></article>
+      </div>
+    </section>
+
+    <section class="plant-contact" id="plant-contact" data-story-step="4" aria-labelledby="plant-contact-title">
+      <div class="plant-grid-tag"><span>05</span><i>HANDOFF</i><b>END / NEXT</b></div>
+      <div class="plant-contact-copy" data-story-reveal><p>SYSTEM MODEL / COMPLETE</p><h2 id="plant-contact-title">Mulai dari<br>pertanyaan yang <em>tepat.</em></h2><p>Nama perusahaan, kapabilitas, dan kontak yang sebenarnya dapat ditambahkan setelah materi tersedia.</p><span class="plant-disclaimer">DEMO SAJA · TANPA KLAIM OPERASIONAL</span></div>
+      <form class="plant-form" data-demo-form="pertanyaan" novalidate><label for="industry-email">Email simulasi</label><input id="industry-email" name="email" type="email" autocomplete="email" required placeholder="nama@contoh.com"><button type="submit">Kirim simulasi <span aria-hidden="true">↗</span></button><p class="form-status" role="status" aria-live="polite"></p><small>Form ini tidak mengirim atau menyimpan data.</small></form>
+    </section>
+  </main>
+
+  <nav class="plant-progress" data-story-progress aria-label="System inspection stages"><span class="plant-progress-line" data-story-fill></span><a href="#plant-cover" data-chapter-link aria-current="step">00</a><a href="#plant-problem" data-chapter-link>01</a><a href="#plant-network" data-chapter-link>02</a><a href="#plant-capability" data-chapter-link>03</a><a href="#plant-contact" data-chapter-link>04</a><span class="plant-progress-state"><b data-story-current>01</b><i>STAGE</i></span></nav>
+  <footer class="plant-footer"><a href="/">← Kembali ke galeri</a><span>NEXA / SYSTEMS · INDUSTRY CONCEPT</span><span>MODEL / NON-OPERATIONAL</span></footer>
+  <output class="preview-toast" data-preview-toast role="status" aria-live="polite"></output>
+</body>
+</html>

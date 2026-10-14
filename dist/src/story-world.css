@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box
+}
+
+:root {
+    font-family: 'DM Sans', sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    --mono: 'DM Mono', monospace;
+    --display: 'Space Grotesk', sans-serif;
+    --serif: 'Instrument Serif', Georgia, serif
+}
+
+html {
+    min-width: 320px;
+    scroll-padding-top: 88px
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    overflow-x: clip
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit
+}
+
+button,
+a,
+input,
+select,
+textarea,
+[tabindex="0"] {
+    outline-color: currentColor
+}
+
+a {
+    color: inherit
+}
+
+button {
+    color: inherit
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex="0"]:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px
+}
+
+::selection {
+    background: #d7ff61;
+    color: #111
+}
+
+.preview-site {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    isolation: isolate
+}
+
+.world-canvas-wrap,
+.world-fallback {
+    position: fixed;
+    inset: 0;
+    pointer-events: none
+}
+
+.world-canvas-wrap {
+    z-index: 0;
+    opacity: 0;
+    transition: opacity .8s ease
+}
+
+.world-canvas-wrap canvas {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.world-fallback {
+    z-index: 0;
+    display: grid;
+    place-items: center;
+    opacity: 1;
+    transition: opacity .65s ease
+}
+
+.fallback-object {
+    display: block;
+    position: relative;
+    width: min(31vw, 390px);
+    aspect-ratio: 1
+}
+
+html[data-world="ready"] .world-canvas-wrap {
+    opacity: 1
+}
+
+html[data-world="ready"] .world-fallback {
+    opacity: 0
+}
+
+html[data-world="fallback"] .world-canvas-wrap {
+    opacity: 0
+}
+
+.concept-ribbon {
+    position: relative;
+    z-index: 30;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 7px 4vw;
+    font: 500 9px/1.4 var(--mono);
+    letter-spacing: .14em;
+    text-transform: uppercase
+}
+
+.preview-site [data-story-reveal] {
+    will-change: transform, opacity
+}
+
+button {
+    cursor: pointer
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: .45
+}
+
+.form-status,
+.cart-status {
+    min-height: 1.35em;
+    margin: 10px 0 0;
+    font: 12px/1.5 var(--mono)
+}
+
+.demo-dialog {
+    width: min(540px, calc(100vw - 32px));
+    max-height: min(80vh, 720px);
+    padding: clamp(22px, 5vw, 42px);
+    border: 1px solid currentColor;
+    border-radius: 2px;
+    background: var(--dialog-bg, #f5f2eb);
+    color: var(--dialog-ink, #24231d);
+    box-shadow: 0 28px 100px rgba(0, 0, 0, .24)
+}
+
+.demo-dialog::backdrop {
+    background: rgba(9, 12, 12, .68);
+    backdrop-filter: blur(7px)
+}
+
+.dialog-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: flex-start
+}
+
+.dialog-head h2 {
+    margin: 4px 0;
+    font: 400 clamp(32px, 6vw, 54px)/.98 var(--serif)
+}
+
+.dialog-close {
+    width: 38px;
+    height: 38px;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 24px
+}
+
+.dialog-disclaimer {
+    font: 12px/1.65 var(--mono)
+}
+
+.cart-items {
+    padding-left: 20px
+}
+
+.cart-empty[hidden] {
+    display: none
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 22px
+}
+
+.dialog-actions button {
+    padding: 11px 16px;
+    border: 1px solid currentColor;
+    background: transparent
+}
+
+.text-button {
+    cursor: pointer
+}
+
+.preview-toast {
+    position: fixed;
+    z-index: 100;
+    right: 22px;
+    bottom: 22px;
+    max-width: min(390px, calc(100vw - 44px));
+    padding: 14px 18px;
+    border: 1px solid currentColor;
+    background: #121714;
+    color: #f5f2e9;
+    font: 12px/1.55 var(--mono);
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: opacity .2s, transform .2s
+}
+
+.preview-toast.is-visible {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+@media(prefers-reduced-motion:reduce) {
+    :root {
+        scroll-behavior: auto
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-snap-type: none !important
+    }
+
+    .world-canvas-wrap,
+    .world-fallback {
+        transition: none
+    }
+
+    .preview-site [data-story-reveal] {
+        will-change: auto
+    }
+}

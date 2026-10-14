@@ -1,0 +1,24 @@
+{
+    "routes": [
+        {
+            "path": "/",
+            "title": "Ruang Digital — Galeri Konsep Landing Page"
+        },
+        {
+            "path": "/preview/fnb/",
+            "title": "Rasa Kitchen — Konsep Landing Page F&B"
+        },
+        {
+            "path": "/preview/retail/",
+            "title": "FORM Objects — Konsep Landing Page Retail"
+        },
+        {
+            "path": "/preview/industry/",
+            "title": "NEXA Systems — Konsep Landing Page Industri"
+        },
+        {
+            "path": "/preview/profile/",
+            "title": "Studio 04 — Konsep Portofolio Personal"
+        }
+    ]
+}

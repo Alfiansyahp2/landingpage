@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f0efe8">
+  <meta name="description" content="FORM — konsep retail interaktif yang mengajak pengunjung berkeliling satu objek sebelum masuk ke etalase.">
+  <title>FORM / OBJECTS — Satu objek, banyak sisi · Konsep retail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/story-world.css"><link rel="stylesheet" href="/src/theme-retail.css">
+  <script type="module" src="/src/preview-sites.js"></script><script type="module" src="/src/story-world.bundle.js"></script>
+</head>
+<body class="preview-site site-retail" data-preview="retail">
+  <div class="world-canvas-wrap" aria-hidden="true"><canvas id="story-canvas"></canvas></div>
+  <div class="world-fallback world-fallback--retail" aria-hidden="true"><span class="fallback-object"></span></div>
+  <header class="object-header">
+    <a class="object-wordmark" href="/" aria-label="Kembali ke galeri konsep">FORM<span>—</span><small>OBJECTS FOR EVERYDAY</small></a>
+    <nav class="object-nav" data-site-nav inert aria-label="Menu koleksi FORM"><a href="#object-spec">Satu objek</a><a href="#object-shelf">Koleksi</a><a href="#object-story">Studio notes</a></nav>
+    <span class="retail-concept-label">RETAIL STUDY / NOT FOR SALE</span>
+    <button class="cart-button" type="button" data-open-cart aria-label="Buka tas demo, 0 item">Tas <span data-cart-count>0</span></button>
+    <button class="object-menu-toggle" type="button" data-menu-toggle aria-label="Buka navigasi" aria-expanded="false">MENU</button>
+  </header>
+
+  <main class="retail-journey" data-story-journey>
+    <section class="object-opening" id="object-opening" data-story-step="0" aria-labelledby="object-title">
+      <div class="object-opening-copy" data-story-reveal="static">
+        <p class="object-overline">OBJECT STUDY / NO.01 <span>FORM / 2026</span></p>
+        <h1 id="object-title">The everyday<br><em>vessel.</em></h1>
+        <p>Awali dari satu siluet. Bergerak lebih dekat, pilih permukaannya, lalu lihat bagaimana benda itu hidup di ruang.</p>
+        <a class="object-shop-link" href="#object-spec">Lihat dari dekat <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="object-product-mark"><span>HAND-FINISHED<br>OBJECT</span><i>01</i><small>VISUALISASI 3D / DESAIN KONSEPTUAL</small></div>
+      <div class="object-price-note">MATERIAL IS THE<br>FIRST IMPRESSION.</div>
+    </section>
+
+    <section class="object-spec" id="object-spec" data-story-step="1" aria-labelledby="object-spec-title">
+      <div class="object-section-meta"><span>DETAIL 01 — PROFILE</span><span>360° VIEW / SCROLL ORBIT</span></div>
+      <div class="object-spec-copy" data-story-reveal>
+        <p class="object-overline">SHAPE / FINISH / FEEL</p>
+        <h2 id="object-spec-title">Dibentuk<br>oleh <em>sentuhan.</em></h2>
+        <p>Permukaan, lekuk, dan cahaya memberi karakter pada objek. Pilih finishing untuk mengubah material model demo 3D.</p>
+        <fieldset class="finish-selector"><legend>Pilih arah material</legend>
+          <button type="button" data-finish="chalk" aria-pressed="true"><i></i>Chalk</button>
+          <button type="button" data-finish="moss" aria-pressed="false"><i></i>Moss</button>
+          <button type="button" data-finish="clay" aria-pressed="false"><i></i>Clay</button>
+        </fieldset>
+        <span class="object-demo-note">Pemilihan mengubah visual saja—ini bukan produk yang dijual.</span>
+      </div>
+      <div class="object-dimension"><b>FORM / 01</b><span>PROPORTION STUDY</span><i>— silhouette, volume, light —</i></div>
+    </section>
+
+    <section class="object-shelf" id="object-shelf" data-story-step="2" aria-labelledby="object-shelf-title">
+      <div class="shelf-heading" data-story-reveal><div><p class="object-overline">IN THE SAME ROOM / COLLECTION DEMO</p><h2 id="object-shelf-title">Objects in<br><em>company.</em></h2></div><p>Jelajahi bentuk-bentuk lain dalam koleksi konseptual. Geser mendatar untuk melihat seluruh rak.</p></div>
+      <div class="object-shelf-track" aria-label="Etalase horizontal konsep" tabindex="0">
+        <article class="shelf-card"><div class="shelf-art shelf-art--arch" aria-hidden="true"><i></i></div><span>FORM / 02</span><h3>Arc vessel</h3><button type="button" data-add-cart data-product="Arc vessel">Masukkan ke tas demo <span aria-hidden="true">+</span></button></article>
+        <article class="shelf-card"><div class="shelf-art shelf-art--block" aria-hidden="true"><i></i></div><span>FORM / 03</span><h3>Study block</h3><button type="button" data-add-cart data-product="Study block">Masukkan ke tas demo <span aria-hidden="true">+</span></button></article>
+        <article class="shelf-card"><div class="shelf-art shelf-art--glass" aria-hidden="true"><i></i></div><span>FORM / 04</span><h3>Glass form</h3><button type="button" data-add-cart data-product="Glass form">Masukkan ke tas demo <span aria-hidden="true">+</span></button></article>
+        <article class="shelf-card shelf-card--last"><div class="shelf-last-copy">Satu bentuk<br>membawa<br>ke <em>bentuk lain.</em></div><button type="button" data-open-cart>Lihat isi tas <span aria-hidden="true">↗</span></button></article>
+      </div>
+      <div class="shelf-scroll-hint"><span>SCROLL HORIZONTAL</span><i aria-hidden="true">⟵</i><i aria-hidden="true">⟶</i></div>
+    </section>
+
+    <section class="object-story" id="object-story" data-story-step="3" aria-labelledby="object-story-title">
+      <p class="object-overline">FORM / OBJECT CONCEPT — BELUM LIVE</p>
+      <div class="object-story-body"><h2 id="object-story-title">A good object<br>makes room for <em>life.</em></h2><p>Micro-site retail ini berfokus pada bentuk dan material sebelum tombol belanja. Nama merek, harga, stok, dan tautan toko sebenarnya dapat menggantikan konsep ini nanti.</p></div>
+      <button class="object-final-cart" type="button" data-open-cart>Lihat tas demo <span aria-hidden="true">↗</span></button>
+    </section>
+  </main>
+
+  <nav class="retail-index" data-story-progress aria-label="Posisi dalam product story">
+    <span class="retail-progress-track" data-story-fill></span>
+    <a href="#object-opening" data-chapter-link aria-current="step"><span>01</span></a><a href="#object-spec" data-chapter-link><span>02</span></a><a href="#object-shelf" data-chapter-link><span>03</span></a><a href="#object-story" data-chapter-link><span>04</span></a>
+    <b data-story-current>01</b><small>FORM / 01</small>
+  </nav>
+  <footer class="object-footer"><a href="/">← Kembali ke indeks</a><span>RETAIL STUDY · KONSEP / 02</span></footer>
+
+  <dialog class="demo-dialog cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="dialog-head"><div><p class="object-overline">FORM / CART DEMO</p><h2 id="cart-title">Tas pilihan.</h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Tutup keranjang">×</button></div>
+    <p class="dialog-disclaimer">Tas ini hanya menunjukkan interaksi situs retail. Tidak ada harga, pesanan, atau pembayaran.</p><p class="cart-empty" data-cart-empty>Tas masih kosong.</p><ul class="cart-items" data-cart-items></ul><p class="cart-status" role="status" aria-live="polite"></p>
+    <div class="dialog-actions"><button class="text-button" type="button" data-clear-cart>Kosongkan</button><button class="solid-button" type="button" data-checkout>Lanjutkan demo</button></div>
+  </dialog>
+  <output class="preview-toast" data-preview-toast role="status" aria-live="polite"></output>
+</body>
+</html>

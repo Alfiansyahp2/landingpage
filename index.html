@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#080b10" />
+    <meta name="description" content="Jelajahi empat live preview landing page konsep untuk F&B, retail, industri, dan portofolio personal." />
+    <meta property="og:title" content="Ruang Digital — Live Preview Landing Page" />
+    <meta property="og:description" content="Empat demo landing page yang bisa dijelajahi dalam satu perjalanan 3D." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>Ruang Digital — Landing Page Concepts</title>
+    <script type="module" src="/src/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Langsung ke konten</a>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="site-header">
+      <a class="brand-lockup" href="#top" aria-label="Ruang Digital, halaman utama">
+        <span class="brand-mark" aria-hidden="true"><i></i><b></b></span>
+        <span class="brand-text">DIGITAL<br />SHOWCASE</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a href="#projects">KONSEP <span>04</span></a>
+        <a href="#about">TENTANG</a>
+        <span class="nav-status"><i></i> 04 LIVE PREVIEW</span>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka menu"><span></span><span></span></button>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Navigasi seluler" inert>
+        <a href="#projects">Lihat empat konsep</a>
+        <a href="#about">Tentang galeri</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true"><span class="halo halo-one"></span><span class="halo halo-two"></span><span class="hero-grain"></span></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> KURASI LANDING PAGE <span class="eyebrow-separator">—</span> KONSEP AWAL</p>
+          <h1 id="hero-title">Setiap halaman,<br /><em>dunianya sendiri.</em></h1>
+          <div class="hero-summary-row">
+            <p>Empat arah visual. Satu perjalanan digital yang mengikuti scroll—dari rasa, bentuk, sistem, hingga identitas.</p>
+            <a class="scroll-link" href="#projects"><span>MASUK KE GALERI</span><b aria-hidden="true">↓</b></a>
+          </div>
+        </div>
+
+        <div class="hero-orbit" aria-hidden="true">
+          <div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div>
+          <div class="orbit-core"><span>WEB<br />WORLDS</span><i></i></div>
+          <div class="orbit-card orbit-food"><small>01 / F&B</small><b>RASA</b><span>BUKA UNTUK RASA</span></div>
+          <div class="orbit-card orbit-retail"><small>02 / RETAIL</small><b>FORM</b><span>OBJECTS FOR LIVING</span></div>
+          <div class="orbit-card orbit-industry"><small>03 / INDUSTRI</small><b>NEXA</b><span>BUILT TO MOVE</span></div>
+          <div class="orbit-card orbit-profile"><small>04 / PROFILE</small><b>STUDIO</b><span>IDEA IN MOTION</span></div>
+        </div>
+        <div class="hero-footer-line"><span>PORTOFOLIO KONSEP DIGITAL</span><span>GULIR UNTUK MENJELAJAH <i>↓</i></span><span>01 — 04</span></div>
+      </section>
+
+      <section class="collection-intro" id="projects" aria-labelledby="collection-title">
+        <div class="section-rule"><span>01 / PILIH ARAH</span><span>GULIR UNTUK BERPINDAH DUNIA</span></div>
+        <div class="collection-heading">
+          <h2 id="collection-title">Satu ide,<br /><em>banyak semesta.</em></h2>
+          <p>Setiap kategori punya live preview interaktif dengan bahasa visual dan ritmenya sendiri. Semuanya masih konsep—belum menjadi website bisnis yang tayang di URL eksternal.</p>
+        </div>
+        <div class="category-chips" aria-label="Empat kategori konsep">
+          <a href="#scene-fnb"><span>01</span> F&B</a>
+          <a href="#scene-retail"><span>02</span> RETAIL</a>
+          <a href="#scene-industry"><span>03</span> INDUSTRI</a>
+          <a href="#scene-profile"><span>04</span> COMPANY PROFILE</a>
+        </div>
+      </section>
+
+      <nav class="section-rail" id="section-rail" aria-label="Navigasi konsep" hidden></nav>
+      <div class="project-flow" id="project-flow" aria-live="polite" aria-busy="true">
+        <p class="loading-state">Menyusun empat dunia digital…</p>
+      </div>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="section-rule"><span>02 / TENTANG GALERI</span><span>EMPAT TITIK BERANGKAT</span></div>
+        <div class="about-layout">
+          <h2 id="about-title">Konsep hari ini.<br /><em>Halaman nyata menyusul.</em></h2>
+          <div class="about-copy">
+            <p>Setiap konsep sekarang memiliki halaman demo mandiri yang bisa dibuka dan dijelajahi. Nama, copy, gambar, produk, dan interaksi di dalamnya merupakan ilustrasi—bukan bisnis atau profil nyata.</p>
+            <p>Jika nanti URL, materi, atau screenshot asli tersedia, tautan demo tetap bisa dipertahankan sambil kartu galeri juga membuka landing page yang sebenarnya.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand-lockup footer-brand" href="#top" aria-label="Kembali ke atas"><span class="brand-mark" aria-hidden="true"><i></i><b></b></span><span class="brand-text">DIGITAL<br />SHOWCASE</span></a>
+      <p>Empat cara melihat ide—<br /><em>sebelum ia tayang.</em></p>
+      <a class="back-top" href="#top">KEMBALI KE ATAS <span>↑</span></a>
+      <span class="footer-caption">KONSEP VISUAL · F&B / RETAIL / INDUSTRI / PROFILE</span>
+    </footer>
+
+    <dialog class="concept-dialog" id="concept-dialog" aria-labelledby="concept-dialog-title">
+      <div class="dialog-header"><a class="brand-lockup" href="#top" aria-label="Kembali ke awal"><span class="brand-mark" aria-hidden="true"><i></i><b></b></span><span class="brand-text">DIGITAL<br />SHOWCASE</span></a><span class="dialog-count" id="dialog-count">KONSEP 01 / 04</span><button class="close-dialog" type="button" data-close-dialog aria-label="Tutup detail">TUTUP <b>×</b></button></div>
+      <div class="dialog-body" id="dialog-body"></div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
